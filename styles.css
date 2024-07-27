@@ -1,0 +1,336 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 200;
+}
+
+header {
+    padding: 20px;
+    position: relative;
+}
+
+
+
+.shop-logo {
+    width: 140px; /* Adjust size as needed */
+    height: 140px; /* Adjust size as needed */
+    margin-right: 90%;
+}
+.shop-logoname{
+    margin-left: 450px;
+    width: 550px;
+    height: 250px;
+}
+
+
+.hover-container {
+    position: absolute;
+    top: 31px;
+    right: 40px;
+}
+
+.hover-trigger {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    margin: 0;
+}
+
+.hover-info {
+    visibility: hidden;
+    opacity: 0;
+    width: 250px;
+    background-color: #161616;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+.hover-container:hover .hover-info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-buttons {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    display: flex;
+    gap: 20px;
+}
+
+.products-button {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+.products-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #161616;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    width: 150px;
+    z-index: 10;
+    text-align: center;
+}
+
+.products-button:hover .products-info {
+    display: block;
+}
+
+.products-info a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.products-info a:hover {
+    background-color: #333;
+}
+
+.contact-button {
+    position: absolute;
+    top: 11px;
+    right: -95px;
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px;
+}
+
+.text-section {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+.main-img, .hover-img {
+    width: 100%;
+    transition: opacity 0.6s ease;
+    border-radius: 15px; /* Added to curve the corners */
+}
+
+
+.text-section h2,
+.text-section p,
+#images h2,
+#contact-info h2,
+#contact-info p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.main-img {
+    width: 100%;
+    transition: opacity 0.6s ease;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.image-container:hover .main-img {
+    opacity: 0;
+}
+
+.image-container:hover .hover-img {
+    opacity: 1;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #101010;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#images {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+#images.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-section {
+    background-color: #050404;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+#contact-info a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.contact-item:hover .contact-text {
+    visibility: visible;
+    opacity: 1;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #161616;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    transition: display 0.3s ease;
+}
+
+#back-to-top.visible {
+    display: block;
+}
+
+/* General Reset for Margins */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Image Slider Styles */
+.image-slider {
+    text-align: center;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #101010; /* Adjust background if needed */
+}
+
+.slider-container {
+    position: relative;
+    width: 30%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow:visible; /* Hide overflow for animation */
+}
+
+.slider {
+    display: flex;
+    transition: transform 1.2s ease-in-out; /* Smooth transition */
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Opaque effect for previous slide */
+.slide.prev-slide {
+    opacity: 0.3;
+    background-color: white;
+}
+
+button.prev-slide,
+button.next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev-slide {
+    left: 10px;
+}
+
+button.next-slide {
+    right: 10px;
+}
+
+button.prev-slide:hover,
+button.next-slide:hover {
+    background-color: rgba(7, 7, 7, 0.8);
+}
+
+/* Map Section Styles */
+.map-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #101010; /* Adjust background color if needed */
+}
+
+#map {
+    height: 600px; /* Adjust height as needed */
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px; /* Optional: Adds rounded corners to the map */
+}
+
+
+
+
+
+
