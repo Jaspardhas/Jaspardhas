@@ -7,32 +7,30 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 2%;
     position: relative;
 }
 
-
-
 .shop-logo {
-    width: 140px; /* Adjust size as needed */
-    height: 140px; /* Adjust size as needed */
-    margin-right: 90%;
-}
-.shop-logoname{
-    margin-left: 450px;
-    width: 550px;
-    height: 250px;
+    width: 10%;
+    height: auto;
+    margin-right: 80%;
 }
 
+.shop-logoname {
+    margin-left: 32%;
+    width: 40%;
+    height: auto;
+}
 
 .hover-container {
     position: absolute;
-    top: 31px;
-    right: 40px;
+    top: 3%;
+    right: 4%;
 }
 
 .hover-trigger {
-    font-size: 16px;
+    font-size: 1.5vw;
     cursor: pointer;
     color: white;
     margin: 0;
@@ -41,16 +39,16 @@ header {
 .hover-info {
     visibility: hidden;
     opacity: 0;
-    width: 250px;
+    width: 20%;
     background-color: #161616;
     color: white;
     text-align: left;
-    padding: 10px;
+    padding: 1%;
     border-radius: 5px;
     position: absolute;
     top: 100%;
     right: 0;
-    transform: translateY(10px);
+    transform: translateY(10%);
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 10;
 }
@@ -62,16 +60,16 @@ header {
 
 .menu-buttons {
     position: absolute;
-    top: 20px;
-    right: 200px;
+    top: 2%;
+    right: 20%;
     display: flex;
-    gap: 20px;
+    gap: 2%;
 }
 
 .products-button {
-    position: absolute;
-    top: -5px;
-    right: 10px;
+    position: ;
+    top: -0.5%;
+    right: 1%;
 }
 
 .products-info {
@@ -82,7 +80,7 @@ header {
     background-color: #161616;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-    width: 150px;
+    width: 15%;
     z-index: 10;
     text-align: center;
 }
@@ -93,7 +91,7 @@ header {
 
 .products-info a {
     display: block;
-    padding: 10px;
+    padding: 1%;
     color: white;
     text-decoration: none;
     border-bottom: 1px solid #333;
@@ -105,27 +103,27 @@ header {
 
 .contact-button {
     position: absolute;
-    top: 11px;
-    right: -95px;
+    top: 1%;
+    right: -10%;
     color: white;
     display: flex;
     text-decoration: none;
 }
 
 main {
-    padding: 10px;
+    padding: 1%;
 }
 
 .text-section {
     font-family: 'Dancing Script', cursive;
     text-align: center;
 }
+
 .main-img, .hover-img {
     width: 100%;
     transition: opacity 0.6s ease;
-    border-radius: 15px; /* Added to curve the corners */
+    border-radius: 15px;
 }
-
 
 .text-section h2,
 .text-section p,
@@ -145,9 +143,9 @@ main {
 
 .image-container {
     position: relative;
-    margin: 10px;
+    margin: 1%;
     overflow: hidden;
-    width: 300px;
+    width: 30%;
 }
 
 .main-img {
@@ -175,19 +173,19 @@ main {
 .btn {
     display: block;
     text-align: center;
-    margin: 10px auto;
-    padding: 10px 20px;
+    margin: 1% auto;
+    padding: 1% 2%;
     color: rgb(255, 255, 255);
     background-color: #101010;
     text-decoration: none;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1.5vw;
 }
 
 #images {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(5%);
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 
@@ -198,7 +196,7 @@ main {
 
 .contact-section {
     background-color: #050404;
-    padding: 20px;
+    padding: 2%;
     width: 100%;
     text-align: left;
     float: left;
@@ -213,13 +211,13 @@ main {
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 .contact-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 2%;
+    height: auto;
+    margin-right: 1%;
     cursor: pointer;
 }
 
@@ -227,13 +225,14 @@ main {
     visibility: visible;
     opacity: 1;
 }
+
 #back-to-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 3%;
+    right: 3%;
     background-color: #161616;
     color: white;
-    padding: 10px 20px;
+    padding: 1% 2%;
     border-radius: 5px;
     text-decoration: none;
     display: none;
@@ -244,31 +243,29 @@ main {
     display: block;
 }
 
-/* General Reset for Margins */
 section {
     margin: 0;
     padding: 0;
 }
 
-/* Image Slider Styles */
 .image-slider {
     text-align: center;
-    margin: 80px auto;
-    padding: 20px;
-    background-color: #101010; /* Adjust background if needed */
+    margin: 8% auto;
+    padding: 2%;
+    background-color: #101010;
 }
 
 .slider-container {
     position: relative;
-    width: 30%;
+    width: 80%;
     max-width: 800px;
     margin: 0 auto;
-    overflow:visible; /* Hide overflow for animation */
+    overflow: hidden;
 }
 
 .slider {
     display: flex;
-    transition: transform 1.2s ease-in-out; /* Smooth transition */
+    transition: transform 1.2s ease-in-out;
 }
 
 .slide {
@@ -283,7 +280,6 @@ section {
     transition: opacity 1s ease-in-out;
 }
 
-/* Opaque effect for previous slide */
 .slide.prev-slide {
     opacity: 0.3;
     background-color: white;
@@ -297,17 +293,17 @@ button.next-slide {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 1%;
     cursor: pointer;
     z-index: 10;
 }
 
 button.prev-slide {
-    left: 10px;
+    left: 1%;
 }
 
 button.next-slide {
-    right: 10px;
+    right: 1%;
 }
 
 button.prev-slide:hover,
@@ -315,22 +311,15 @@ button.next-slide:hover {
     background-color: rgba(7, 7, 7, 0.8);
 }
 
-/* Map Section Styles */
 .map-section {
-    padding: 20px;
+    padding: 2%;
     text-align: center;
-    background-color: #101010; /* Adjust background color if needed */
+    background-color: #101010;
 }
 
 #map {
-    height: 600px; /* Adjust height as needed */
+    height: 60vh;
     width: 100%;
     border: 2px solid #fff;
-    border-radius: 10px; /* Optional: Adds rounded corners to the map */
+    border-radius: 10px;
 }
-
-
-
-
-
-
