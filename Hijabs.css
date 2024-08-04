@@ -1,0 +1,495 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 200;
+}
+
+header {
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.shop-logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.shop-logoname {
+    margin-left: 460px;
+    width: 150px;
+    height: 70px;
+    
+}
+
+.shop-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image {
+    width: 130px;
+    height: 300px;
+}
+
+.shop-name {
+    font-size: 60px;
+    line-height: 1.0625;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    font-family: 'D', cursive;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link2 {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: -55px;
+    margin-left: 1080px;
+}
+.nav-link1 {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: -55px;
+    margin-left: 20px;
+}
+
+.main {
+    padding: 1px;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 40px 70px;
+}
+
+.intro-image {
+    width: 50%;
+    max-width: 220px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.intro-text {
+    text-align: center;
+
+
+
+}
+
+.intro-text h2 {
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+    font-weight: 350;
+}
+
+.intro-text p {
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+.intro-text {
+    align-items: center;
+    border-left: 10px;
+    border-right: 20px;
+}
+
+.shawl-gallery {
+    text-align: center;
+    padding: 50px 20px;
+    
+
+    
+}
+
+.shawl-gallery h2 {
+
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 350;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.main-img {
+    width: 100%;
+    transition: opacity 0.6s ease;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.image-container:hover .main-img {
+    opacity: 0;
+}
+
+.image-container:hover .hover-img {
+    opacity: 1;
+}
+
+.shawl-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.shawl-name,
+.shawl-model {
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-section {
+    background-color: #050404;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-section h2 {
+
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 350;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-text {
+    font-weight: -100%;
+}
+
+.contact-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #161616;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    transition: display 0.3s ease;
+}
+
+#back-to-top.visible {
+    display: block;
+}
+
+.main-img, .hover-img {
+    width: 100%;
+    transition: opacity 0.6s ease;
+    border-radius: 20px; /* Adjust the value as needed */
+}
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .hover-container {
+    position: absolute;
+    top: 31px;
+    right: 40px;
+}
+
+.hover-trigger {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    margin: 0;
+}
+
+.hover-info {
+    visibility: hidden;
+    opacity: 0;
+    width: 250px;
+    background-color: #161616;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+.hover-container:hover .hover-info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-buttons {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    display: flex;
+    gap: 20px;
+}
+
+.products-button {
+    position: absolute;
+    top: 10px;
+    right: 260px;
+    font-size: 20px;
+}
+
+.products-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #161616;
+    border-radius: 5px;
+    box-shadow: 0px 4px px rgba(0,0,0,0.1);
+    width: 150px;
+    z-index: 15;
+    text-align: center;
+    
+    
+}
+
+
+.products-button:hover .products-info {
+    display: block;
+}
+
+.products-info a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.products-info a:hover {
+    background-color: #333;
+}
+
+  
+
+
+
+  @media only screen and (max-width: 414px) {
+    body {
+        overflow-x: hidden; /* Add this to prevent horizontal overflow */
+    }
+    .intro-image {
+        height:220px;
+        width:150px;
+        margin-left: 90px;
+        margin-bottom: 50px;
+    }
+
+    .shop-logo {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    .intro-text h2 {
+        font-size: 10vw;
+        margin-bottom: 20px;
+        font-weight: 450;
+        margin-left: 0px;
+    }
+    
+    .intro-text p {
+        font-size: 4.5vw;
+        text-align: center;
+        margin-left: -0px
+
+        
+    }
+    .intro-section {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    .intro-text {
+        align-items: center;
+        border-left: 30px;
+        border-right: 20px;
+    }
+    .nav-link2 {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 0px;
+        margin-left: 10px;
+        font-weight: 500
+
+    }
+    .nav-link1 {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 0px;
+        margin-left: 15px;
+        font-weight: 500;
+    }
+    .products-button {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .shawl-gallery h2 {
+
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 350;
+    }

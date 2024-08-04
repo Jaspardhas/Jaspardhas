@@ -1,0 +1,405 @@
+/* Default styles */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 200;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 2%;
+    position: relative;
+}
+
+.shop-logo {
+    width: 10%;
+    height: auto;
+    margin-right: 80%;
+}
+
+.shop-logoname {
+    margin-left: 30%;
+    width: 40%;
+    height: auto;
+}
+
+.hover-container {
+    position: absolute;
+    top: 31px;
+    right: 40px;
+}
+
+.hover-trigger {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    margin: 0;
+}
+
+.hover-info {
+    visibility: hidden;
+    opacity: 0;
+    width: 250px;
+    background-color: #161616;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+.hover-container:hover .hover-info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-buttons {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    display: flex;
+    gap: 20px;
+}
+
+.products-button {
+    position: absolute;
+    top: 15px;
+    right: 240px;
+}
+
+.products-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #161616;
+    border-radius: 5px;
+    box-shadow: 0px 4px px rgba(0,0,0,0.1);
+    width: 150px;
+    z-index: 15;
+    text-align: center;
+    
+    
+}
+
+.products-button:hover .products-info {
+    display: block;
+}
+
+.products-info a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.products-info a:hover {
+    background-color: #333;
+}
+
+.contact-button {
+    position: absolute;
+    top: 31px;
+    right: 120px;
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+
+main {
+    padding: 1%;
+}
+
+.text-section {
+    font-family: 'Dancing Script', cursive;
+    text-align:center;
+    
+}
+
+.main-img, .hover-img {
+    width: 100%;
+    transition: opacity 0.6s ease;
+    border-radius: 15px;
+}
+
+
+.text-section h2,
+.text-section p,
+#images h2,
+#contact-info h2,
+#contact-info p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 120%;
+    
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    margin: 1%;
+    overflow: hidden;
+    width: 30%;
+}
+
+.main-img {
+    width: 100%;
+    transition: opacity 0.6s ease;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.image-container:hover .main-img {
+    opacity: 0;
+}
+
+.image-container:hover .hover-img {
+    opacity: 1;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    margin: 1% auto;
+    padding: 1% 2%;
+    color: rgb(255, 255, 255);
+    background-color: #101010;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
+}
+
+#images {
+    opacity: 0;
+    transform: translateY(5%);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+#images.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-section {
+    background-color: #050404;
+    padding: 2%;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+#contact-info a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.contact-icon {
+    width: 2%;
+    height: auto;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.contact-item:hover .contact-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    background-color: #161616;
+    color: white;
+    padding: 1% 2%;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    transition: display 0.3s ease;
+}
+
+#back-to-top.visible {
+    display: block;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.image-slider {
+    text-align: center;
+    margin: 8% auto;
+    padding: 2%;
+    background-color: #000000;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1.2s ease-in-out;
+    transition: filter 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    transition: opacity 1s ease-in-out; /* Fade effect */
+   
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
+.slide.prev-slide {
+    opacity: 0.3;
+    background-color: white;
+}
+
+button.prev-slide,
+button.next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev-slide {
+    left: 1%;
+}
+
+button.next-slide {
+    right: 1%;
+}
+
+button.prev-slide:hover,
+button.next-slide:hover {
+    background-color: rgba(7, 7, 7, 0.8);
+}
+
+.map-section {
+    padding: 2%;
+    text-align: center;
+    background-color: #101010;
+}
+
+#map {
+    height: 60vh;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 414px) {
+    body {
+        overflow-x: hidden; /* Add this to prevent horizontal overflow */
+    }
+    header {
+        padding: 5%;
+    }
+    .shop-logo {
+        width: 20%;
+        margin-right: 70%;
+        margin-top: -4%;
+    }
+    .shop-logoname {
+        margin-left: 10%;
+        width: 80%;
+        margin-top: 30%;
+    }
+    
+    .products-button {
+        position: absolute;
+        top: -3px;
+        right: 170px;
+        font-size: 15px;
+        font-weight: 450;
+    }
+    .contact-button{
+        position: absolute;
+        top: 5px;
+        font-size: 15px;
+        top: 12px;
+        right: 65px;
+        font-weight: 450;
+    }
+    .hover-container {
+        position: absolute;
+        top: 11px;
+        right: 1px;
+        font-size: 2px;
+        font-weight: 400;
+    }
+
+.text-section h2{
+    margin-bottom: 150px;
+}
+.btn {
+    display: block;
+    text-align: center;
+    margin: 1% auto;
+    padding: 1% 2%;
+    color: rgb(255, 255, 255);
+    background-color: #101010;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.contact-icon {
+    width: 7%;
+    height: auto;
+    margin-right: 1%;
+    cursor: pointer;
+    gap: 2px;
+}
+
+
+    
+
+    
